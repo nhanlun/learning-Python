@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import numpy as np 
 from scipy.integrate import odeint 
 
-theta = 60 # initial angle
-omega = 10 # initial angle velocity
-b = 0.2 # air resitance
+theta = 180 # initial angle
+omega = 0 # initial angle velocity
+b = 0.5 # air resitance
 g = 9.81 # gravitational acceleration
 l = 2 # length of the rope
 
 
 period = 2 * np.pi * np.sqrt(l / g)
-t = np.arange(0, period * 50, 0.05)
+t = np.arange(0, period * 50, 0.1)
 
 # differential equation
 def pend(state, t, b, g, l): 
