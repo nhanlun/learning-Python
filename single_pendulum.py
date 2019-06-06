@@ -5,7 +5,7 @@ from scipy.integrate import odeint
 
 theta = 180 # initial angle
 omega = 0 # initial angle velocity
-b = 0.5 # air resitance
+b = 0.2 # air resitance
 g = 9.81 # gravitational acceleration
 l = 2 # length of the rope
 
