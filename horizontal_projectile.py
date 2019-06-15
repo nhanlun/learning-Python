@@ -7,7 +7,7 @@ g = 9.81 # gravitational acceleration
 weight = 1 # weigth of the object
 vX0 = 10 # initial X velocity
 tFinal = np.sqrt(2 * height / g)
-t = np.arange(0, tFinal, 0.005)
+t = np.linspace(0, tFinal, int(tFinal) * 50)
 
 fig, ax = plt.subplots()
 rec = plt.Rectangle((0, height), 0.5, 0.5)
